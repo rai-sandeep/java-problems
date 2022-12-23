@@ -1,28 +1,22 @@
-package com.sdp.problems.medium.nearestsmallernum;
+package com.sdp.problems.medium.array.nearestsmallernum;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class StackSolution {
-    public static void main(String[] args) {
-        solution(new int[]{1, 6, 7, 8, 9, 5, 4, 3, 2 });
-    }
 
-    static void solution(int[] a) {
+    static int[] solution(int[] a) {
+        int[] b = new int[a.length];
         //https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html
         //recommends using Deque implementation instead of Stack class
         Deque<Integer> stack = new ArrayDeque<>();
         for (int i=0; i<a.length; i++) {
-            if (i > 0)  System.out.print(", ");
             while (!stack.isEmpty() && stack.peek() >= a[i]) {
                 stack.pop();
             }
-            if (stack.isEmpty()) {
-                System.out.print("-1");
-            } else {
-                System.out.print(stack.peek());
-            }
+            b[i] = stack.isEmpty() ? -1 : stack.peek();
             stack.push(a[i]);
         }
+        return b;
     }
 }

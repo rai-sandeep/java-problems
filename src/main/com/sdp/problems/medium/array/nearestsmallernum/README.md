@@ -10,19 +10,14 @@ If no smaller number, print -1.
 #### Example 1
 
 Input: 1, 6, 2  
-Output: -1 1 1  
+Output: -1, 1, 1  
 
 #### Example 2
 
 Input: 1, 5, 0, 3, 4, 5  
-Output: -1 1 -1 0 3 4
+Output: -1, 1, -1, 0, 3, 4
 
-### Test Cases
-
-#### Test Case 1
-
-Input: 1, 6, 7, 8, 9, 5, 4, 3, 2  
-Output: -1, 1, 6, 7, 8, 1, 1, 1, 1
+[Test Cases](../../../../../../../test/com/sdp/problems/medium/array/nearestsmallernum/TestCasesProvider.java)
 
 ### Links
 
