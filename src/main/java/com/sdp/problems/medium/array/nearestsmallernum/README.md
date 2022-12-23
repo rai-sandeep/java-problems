@@ -17,7 +17,7 @@ Output: -1, 1, 1
 Input: 1, 5, 0, 3, 4, 5  
 Output: -1, 1, -1, 0, 3, 4
 
-[Test Cases](../../../../../../../test/com/sdp/problems/medium/array/nearestsmallernum/TestCasesProvider.java)
+[Test Cases](../../../../../../../../test/java/com/sdp/problems/medium/array/nearestsmallernum/TestCasesProvider.java)
 
 ### Links
 
