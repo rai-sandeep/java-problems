@@ -56,21 +56,21 @@ class Solution {
     }
 
     public String longestCommonPrefix(String[] strs, int l, int r) {
-        if (l== r) return strs[l];
-				int mid = (l + r) / 2;
-				String left = longestCommonPrefix(strs, l, mid);
-				String right = longestCommonPrefix(strs, mid + 1, r);
-				return commonPrefix(left, right);
-		}
+        if (l == r) return strs[l];
+        int mid = (l + r) / 2;
+        String left = longestCommonPrefix(strs, l, mid);
+        String right = longestCommonPrefix(strs, mid + 1, r);
+        return commonPrefix(left, right);
+    }
 
-		public String commonPrefix(String left, String right) {
-		    int min = Math.min(left.length(), right.length());
-		    for (int i = 0; i < min; i++) {
-		        if (left.charAt(i) != right.charAt(i))
-		            return left.substring(0, i);
-		    }
-		    return left.substring(0, min);
-		}
+    public String commonPrefix(String left, String right) {
+        int min = Math.min(left.length(), right.length());
+        for (int i = 0; i < min; i++) {
+            if (left.charAt(i) != right.charAt(i))
+                return left.substring(0, i);
+        }
+        return left.substring(0, min);
+    }
 }
 
 ```

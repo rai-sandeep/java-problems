@@ -8,7 +8,7 @@ This problem is a bit more tricky than finding the largest product of two number
 
 ## Solution
 
-```
+```java
 import java.util.Arrays;
 import java.util.List;
 import java.util.Collections;
@@ -45,7 +45,7 @@ Note: This solution is not the most optimal one, there are better solutions with
 
 ### O(n) Solution
 
-```
+```java
 import java.util.List;
 
 public class MaximumProduct {
@@ -91,7 +91,7 @@ This is more efficient solution than the previous one as it avoids sorting and t
 
 Here are some test cases including edge cases for the function **`maximumProductOfThree`**:
 
-```
+```java
 import java.util.Arrays;
 
 public class MaximumProductTest {
