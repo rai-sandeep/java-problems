@@ -4,17 +4,9 @@ Given a list of integers, write a function that returns the largest product that
 
 For example, if the list is [-10, -10, 5, 2], we should return 500, since that's -10 * -10 * 5.
 
-Here's the signature for the function:
-
-```
-def maximum_product_of_three(lst: List[int]) -> int:
-    pass
-
-```
-
 This problem is a bit more tricky than finding the largest product of two numbers, because now we have to consider negative numbers.
 
-## Possible solution in Java
+## Solution
 
 ```
 import java.util.Arrays;
@@ -42,7 +34,7 @@ Note:
 3. In case of negative numbers, there are chances that negative numbers will give you a bigger product than the positive numbers, thus above solution works.
 
 
-### Time complexity
+### Time Complexity
 
 The time complexity of this solution is O(n log n) because of the sorting step. The Collections.sort() method uses a variation of the merge sort algorithm which has a time complexity of O(n log n) for sorting an array of n elements.
 
@@ -51,7 +43,7 @@ The other steps in the solution have a time complexity of O(n) because we're ite
 Note: This solution is not the most optimal one, there are better solutions with O(n) time complexity.
 
 
-### O(n) solution in Java
+### O(n) Solution
 
 ```
 import java.util.List;
@@ -94,6 +86,8 @@ Finally, it returns the maximum of the product of the three largest elements and
 The time complexity of this solution is O(n), because we are iterating through the input list only once.
 
 This is more efficient solution than the previous one as it avoids sorting and thus reduces the time complexity from O(n log n) to O(n).
+
+### Test Cases
 
 Here are some test cases including edge cases for the function **`maximumProductOfThree`**:
 
@@ -146,5 +140,3 @@ Test case 3: The input list is [5, 5, 5, 5], the expected output is 25 which is 
 Test case 4: The input list is [-1, -2, -3, -4], the expected output is -6 which is the product of -1 * -2 * -3, the expected output and the function output should match.
 
 Test case 5: The input list is [0, 0, 0, 0], the expected output is 0 which is the product of 0 * 0 * 0, the expected output and the function output should match.
-
-You can add other test cases as well to check the correctness of the function.

@@ -1,5 +1,6 @@
 # Compiled class file
 *.class
+target/classes/
 
 # Log file
 *.log
@@ -28,3 +29,6 @@ hs_err_pid*
 *.iml
 *.ipr
 out/
+
+# Mac
+.DS_Store
