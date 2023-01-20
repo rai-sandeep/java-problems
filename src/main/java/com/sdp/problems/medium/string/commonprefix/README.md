@@ -75,7 +75,7 @@ class Solution {
 
 ```
 
-Test Cases
+### **Test Cases**
 
 ```java
 class SolutionTest {
