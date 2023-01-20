@@ -110,7 +110,7 @@ public class MaximumProductTest {
 
         // Test case 3: Edge case 1 (All elements are same)
         int[] test3 = {5, 5, 5, 5};
-        int expectedOutput3 = 25;
+        int expectedOutput3 = 125;
         int output3 = MaximumProduct.maximumProductOfThree(Arrays.asList(test3));
         System.out.println("Test case 3: " + (expectedOutput3 == output3));
 
@@ -135,7 +135,7 @@ Test case 1: The input list is [-10, -10, 5, 2], the expected output is 500 whic
 
 Test case 2: The input list is [1, 2, 3, 4, 5], the expected output is 60 which is the product of 3 * 4 * 5, the expected output and the function output should match.
 
-Test case 3: The input list is [5, 5, 5, 5], the expected output is 25 which is the product of 5 * 5 * 5, the expected output and the function output should match.
+Test case 3: The input list is [5, 5, 5, 5], the expected output is 125 which is the product of 5 * 5 * 5, the expected output and the function output should match.
 
 Test case 4: The input list is [-1, -2, -3, -4], the expected output is -6 which is the product of -1 * -2 * -3, the expected output and the function output should match.
 
